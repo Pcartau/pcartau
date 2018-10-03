@@ -2,32 +2,66 @@ body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+  background-color: #EBF0E9 !important;
 }
-.validate {
+.titre {
+  font-size: 10vh;
+  text-align: center;
+}
+.resultat {
+  position: relative;
+  text-align: center;
+  top: 15vh;
+  font-size: 12vh;
+}
+.resultat_description {
+  position: relative;
+  font-size: 2.5vh;
+  text-align: center;
+  top: 45vh;
+  padding: 10px;
+}
+.lobby_description {
   font-size: 3vh;
+  position: relative;
+  top: 15vh;
+  text-align: center;
+}
+.btn {
   position: fixed;
   top: 60vh;
-  left: 82vh;
+  left: 50%;
+  width: 50vh;
+  height: 5vh;
+  transform: translateX(-50%);
 }
 .question {
   position: relative;
-  top: 100px;
+  top: 8vh;
   font-size: 10vh;
   text-align: center;
 }
 .question_description {
   position: relative;
-  top: 100px;
+  top: 22vh;
   font-size: 3vh;
   text-align: center;
 }
 .separator {
   height: 80vh;
 }
+.chiffre {
+  position: fixed;
+  top: 80vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10vh;
+}
 .selection_bar {
   position: fixed;
   top: 70vh;
-  left: 62vh;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50vh;
   height: 5vh;
   display: flex;

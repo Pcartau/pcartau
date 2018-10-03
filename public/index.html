@@ -2,12 +2,14 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>test</title>
   </head>
   <body>
-    <h1 style="text-align: center;"><a class="sc0">Estimer mon idée</h1>
-    <p>Le but ici est d'estimer votre idée avec des questions simples autour d'un systeme de points.<br/>
+    <h1 class="text-primary titre">Estimer mon idée<a class="sc0"></a></h1>
+    <p class="lobby_description text-info">Le but ici est d'estimer votre idée avec des questions simples autour d'un systeme de points.<br/>
     Vous devrez noter votre idée sur une echelle allant de 1 à 10 sur chaque questions.<br/>
     Suite à ça, un score vous sera donné, en vous indiquant si oui ou non votre idée a du potentiel.</p>
     <div class="selection_bar">
@@ -22,51 +24,55 @@
       <div id="b9" class="selection_bar_9"></div>
       <div id="b10" class="selection_bar_10"></div>
     </div>
-    <button class="validate" id="next">Valider</button>
+    <p class="chiffre"></p>
+    <button type="button" class="btn btn-success" id="next">C'est parti</button>
 <div class="separator"></div>
     <a class="sc1">
-    <p class="question"></a>L'urgence</p>
-    <p class="question_description">Dans quelle mesure votre offre répond-elle à un besoin ou à un désir immédiat des individus ?</p>
+    <p class="question text-primary"></a>L'urgence</p>
+    <p class="question_description text-secondary">Dans quelle mesure votre offre répond-elle à un besoin ou à un désir immédiat des individus ?</p>
 <div class="separator"></div>
     <a class="sc2">
-    <p class="question"></a>La taille du marché</p>
-    <p class="question_description">Combien de personnes sont prêtes à acheter ce genre de choses ?</p>
+    <p class="question text-primary"></a>La taille du marché</p>
+    <p class="question_description text-secondary">Combien de personnes sont prêtes à acheter ce genre de choses ?</p>
 <div class="separator"></div>
     <a class="sc3"></a>
-    <p class="question">Le prix possible</p>
-    <p class="question_description">Quel est le prix le plus élevé qu'un acheteur type serait prêt à payer pour trouver une solution à son problème ?</p>
+    <p class="question text-primary">Le prix possible</p>
+    <p class="question_description text-secondary">Quel est le prix le plus élevé qu'un acheteur type serait prêt à payer pour trouver une solution à son problème ?</p>
 <div class="separator"></div>
     <a class="sc4"></a>
-    <p class="question">Le coût d'acquisition d'un client</p>
-    <p class="question_description">Est-il facile de gagner un nouveau client ?</p>
+    <p class="question text-primary">Le coût d'acquisition d'un client</p>
+    <p class="question_description text-secondary">Est-il facile de gagner un nouveau client ?</p>
 <div class="separator"></div>
     <a class="sc5"></a>
-    <p class="question">Le coût pour délivrer la valeur</p>
-    <p class="question_description">À combien estimez-vous le coût de la création de la valeur pour la délivrer en termes de temps, d'argent et d'énergie ?</p>
+    <p class="question text-primary">Le coût pour délivrer la valeur</p>
+    <p class="question_description text-secondary">À combien estimez-vous le coût de la création de la valeur pour la délivrer en termes de temps, d'argent et d'énergie ?</p>
 <div class="separator"></div>
     <a class="sc6"></a>
-    <p class="question">L'originalité de l'offre</p>
-    <p class="question_description">Quel est le degré de singularité de votre offre comparée aux offres existantes de la concurrence et dans quelle mesure est-il facile pour vos concurrents de vous copier ?</p>
+    <p class="question text-primary">L'originalité de l'offre</p>
+    <p class="question_description text-secondary">Quel est le degré de singularité de votre offre comparée aux offres existantes de la concurrence et dans quelle mesure est-il facile pour vos concurrents de vous copier ?</p>
 <div class="separator"></div>
     <a class="sc7"></a>
-    <p class="question">La rapidité de mise sur le marché</p>
-    <p class="question_description">Avec quelle rapidité pouvez-vous créer quelque chose à vendre ?</p>
+    <p class="question text-primary">La rapidité de mise sur le marché</p>
+    <p class="question_description text-secondary">Avec quelle rapidité pouvez-vous créer quelque chose à vendre ?</p>
 <div class="separator"></div>
     <a class="sc8"></a>
-    <p class="question">L'investissement initial</p>
-    <p class="question_description">Combien allez-vous devoir investir avant d'être prêt à vendre votre produit</p>
+    <p class="question text-primary">L'investissement initial</p>
+    <p class="question_description text-secondary">Combien allez-vous devoir investir avant d'être prêt à vendre votre produit</p>
 <div class="separator"></div>
     <a class="sc9"></a>
-    <p class="question">Le potentiel de ventes additionnelles</p>
-    <p class="question_description">Pourriez-vous réaliser des ventes connexes à l'offre que vous proposez à vos clients ?</p>
+    <p class="question text-primary">Le potentiel de ventes additionnelles</p>
+    <p class="question_description text-secondary">Pourriez-vous réaliser des ventes connexes à l'offre que vous proposez à vos clients ?</p>
 <div class="separator"></div>
     <a class="sc10"></a>
-    <p class="question">Le potentiel de persistance</p>
-    <p class="question_description">Une fois que vous avez créé votre offre initiale, quelle somme de travail supplémentaire allez-vous devoir lui consacrer pour continuer à la vendre ?</p>
+    <p class="question text-primary">Le potentiel de persistance</p>
+    <p class="question_description text-secondary">Une fois que vous avez créé votre offre initiale, quelle somme de travail supplémentaire allez-vous devoir lui consacrer pour continuer à la vendre ?</p>
 <div class="separator"></div>
   <a class="sc11"></a>
-  <p class="question">Resultat</p>
-  <p class="question_description" id="result"></p>
+  <p class="question text-primary">Resultat</p>
+  <p class="resultat" id="result"></p>
+  <p class="resultat_description text-danger">Si votre résultat est égal ou inférieur à 50, choisissez une meilleure idée dans laquelle investir votre temps, votre argent et votre énergie.<br/>
+  Si votre résultat est égal ou supérieur à 75, votre idée est très prometteuse, alors foncez ! Toute idée évaluée entre 50 et 75 peut être rentable, mais ne fera pas un coup de maître sans un lourd investissement.<br/>
+  Alors réfléchissez.</p>
 <div class="separator"></div>
   </bodys>
   <script
