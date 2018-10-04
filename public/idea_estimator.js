@@ -8,7 +8,7 @@ let reset = (integer, color) => {
     $("#b" + i).css("background-color", color)
   }
   while (integer++ <= 10) {
-    $("#b" + integer).css("background-color", "#D7DBD6")
+    $("#b" + integer).css("background-color", "#86FFF7")
   }
 }
 
@@ -25,7 +25,7 @@ $ (document).ready(function() {
 
   $("#next").click(function() {
     if (anchor == 11) {
-      score = 0;
+      result = 0;
       anchor = -1;
       $("#next").html(`C'est parti !`);
       $(".chiffre").fadeOut();

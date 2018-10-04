@@ -34,6 +34,7 @@ body {
   width: 50vh;
   height: 5vh;
   transform: translateX(-50%);
+  z-index: 10;
 }
 .question {
   position: relative;
@@ -68,51 +69,51 @@ body {
 }
 .selection_bar_1 {
   width: 5vh;
-  background-color: #D7DBD6;
+  background-color: #86FFF7;
   border-radius: 50%;
 }
 .selection_bar_2 {
   width: 5vh;
-  background-color: #D7DBD6;
+  background-color: #86FFF7;
   border-radius: 50%;
 }
 .selection_bar_3 {
   width: 5vh;
-  background-color: #D7DBD6;
+  background-color: #86FFF7;
   border-radius: 50%;
 }
 .selection_bar_4 {
   width: 5vh;
-  background-color: #D7DBD6;
+  background-color: #86FFF7;
   border-radius: 50%;
 }
 .selection_bar_5 {
   width: 5vh;
-  background-color: #D7DBD6;
+  background-color: #86FFF7;
   border-radius: 50%;
 }
 .selection_bar_6 {
   width: 5vh;
-  background-color: #D7DBD6;
+  background-color: #86FFF7;
   border-radius: 50%;
 }
 .selection_bar_7 {
   width: 5vh;
-  background-color: #D7DBD6;
+  background-color: #86FFF7;
   border-radius: 50%;
 }
 .selection_bar_8 {
   width: 5vh;
-  background-color: #D7DBD6;
+  background-color: #86FFF7;
   border-radius: 50%;
 }
 .selection_bar_9 {
   width: 5vh;
-  background-color: #D7DBD6;
+  background-color: #86FFF7;
   border-radius: 50%;
 }
 .selection_bar_10 {
   width: 5vh;
-  background-color: #D7DBD6;
+  background-color: #86FFF7;
   border-radius: 50%;
 }
