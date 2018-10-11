@@ -15,9 +15,16 @@ app.get('/', function(req, res) {
   res.render('index.pug')
 })
 
-app.get('index', function(req, res) {
-  console.log("ok");
-  res.render('index.pug')
+app.get('/index', function(req, res) {
+  res.render('index.pug');
+})
+
+app.get('/idea_estimator', function(req, res) {
+  res.render('idea_estimator.pug');
+})
+
+app.get('/objectifs', function(req, res) {
+  res.render('objectifs.pug');
 })
 
 server.listen(port, () => {

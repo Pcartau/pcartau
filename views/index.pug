@@ -3,38 +3,7 @@ html(lang='fr')
   head
     meta(charset='utf-8')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     title
   body
-    nav.navbar.navbar-inverse
-      .container-fluid
-        .navbar-header
-          a.navbar-brand(href='#') Pcartau.fr
-        ul.nav.navbar-nav
-          li.active
-            a(href='index') Home
-          li.dropdown
-            a.dropdown-toggle(data-toggle='dropdown', href='#')
-              | Développement personnel
-              span.caret
-            ul.dropdown-menu
-              li
-                a(href='#') Objectifs
-              li
-                a(href='#') Actions prioritaires
-              li
-                a(href='#') Actions secondaires
-          li.dropdown
-            a.dropdown-toggle(data-toggle='dropdown', href='#')
-              | MBA
-              span.caret
-            ul.dropdown-menu
-              li
-                a(href='#') Valeur ajoutée
-              li
-                a(href='#') Marketing
-              li
-                a(href='#') Vente
-          li
-            a(href='idea_estimator.html') Estimateur d'idée
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    include utils/navbar.pug
