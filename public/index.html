@@ -2,82 +2,40 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="test.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>test</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title></title>
   </head>
   <body>
-    <h1 class="text-primary titre">Estimer mon idée<a class="sc0"></a></h1>
-    <p class="lobby_description text-info">Le but ici est d'estimer votre idée avec des questions simples autour d'un systeme de points.<br/>
-    Vous devrez noter votre idée sur une echelle allant de 1 à 10 sur chaque questions.<br/>
-    Suite à ça, un score vous sera donné, en vous indiquant si oui ou non votre idée a du potentiel.</p>
-    <div class="selection_bar">
-      <div id="b1" class="selection_bar_1"></div>
-      <div id="b2" class="selection_bar_2"></div>
-      <div id="b3" class="selection_bar_3"></div>
-      <div id="b4" class="selection_bar_4"></div>
-      <div id="b5" class="selection_bar_5"></div>
-      <div id="b6" class="selection_bar_6"></div>
-      <div id="b7" class="selection_bar_7"></div>
-      <div id="b8" class="selection_bar_8"></div>
-      <div id="b9" class="selection_bar_9"></div>
-      <div id="b10" class="selection_bar_10"></div>
-    </div>
-    <p class="chiffre"></p>
-    <button type="button" class="btn btn-success" id="next">C'est parti</button>
-<div class="separator"></div>
-    <a class="sc1">
-    <p class="question text-primary"></a>L'urgence</p>
-    <p class="question_description text-secondary">Dans quelle mesure votre offre répond-elle à un besoin ou à un désir immédiat des individus ?</p>
-<div class="separator"></div>
-    <a class="sc2">
-    <p class="question text-primary"></a>La taille du marché</p>
-    <p class="question_description text-secondary">Combien de personnes sont prêtes à acheter ce genre de choses ?</p>
-<div class="separator"></div>
-    <a class="sc3"></a>
-    <p class="question text-primary">Le prix possible</p>
-    <p class="question_description text-secondary">Quel est le prix le plus élevé qu'un acheteur type serait prêt à payer pour trouver une solution à son problème ?</p>
-<div class="separator"></div>
-    <a class="sc4"></a>
-    <p class="question text-primary">Le coût d'acquisition d'un client</p>
-    <p class="question_description text-secondary">Est-il facile de gagner un nouveau client ?</p>
-<div class="separator"></div>
-    <a class="sc5"></a>
-    <p class="question text-primary">Le coût pour délivrer la valeur</p>
-    <p class="question_description text-secondary">À combien estimez-vous le coût de la création de la valeur pour la délivrer en termes de temps, d'argent et d'énergie ?</p>
-<div class="separator"></div>
-    <a class="sc6"></a>
-    <p class="question text-primary">L'originalité de l'offre</p>
-    <p class="question_description text-secondary">Quel est le degré de singularité de votre offre comparée aux offres existantes de la concurrence et dans quelle mesure est-il facile pour vos concurrents de vous copier ?</p>
-<div class="separator"></div>
-    <a class="sc7"></a>
-    <p class="question text-primary">La rapidité de mise sur le marché</p>
-    <p class="question_description text-secondary">Avec quelle rapidité pouvez-vous créer quelque chose à vendre ?</p>
-<div class="separator"></div>
-    <a class="sc8"></a>
-    <p class="question text-primary">L'investissement initial</p>
-    <p class="question_description text-secondary">Combien allez-vous devoir investir avant d'être prêt à vendre votre produit</p>
-<div class="separator"></div>
-    <a class="sc9"></a>
-    <p class="question text-primary">Le potentiel de ventes additionnelles</p>
-    <p class="question_description text-secondary">Pourriez-vous réaliser des ventes connexes à l'offre que vous proposez à vos clients ?</p>
-<div class="separator"></div>
-    <a class="sc10"></a>
-    <p class="question text-primary">Le potentiel de persistance</p>
-    <p class="question_description text-secondary">Une fois que vous avez créé votre offre initiale, quelle somme de travail supplémentaire allez-vous devoir lui consacrer pour continuer à la vendre ?</p>
-<div class="separator"></div>
-  <a class="sc11"></a>
-  <p class="question text-primary">Resultat</p>
-  <p class="resultat" id="result"></p>
-  <p class="resultat_description text-danger">Si votre résultat est égal ou inférieur à 50, choisissez une meilleure idée dans laquelle investir votre temps, votre argent et votre énergie.<br/>
-  Si votre résultat est égal ou supérieur à 75, votre idée est très prometteuse, alors foncez ! Toute idée évaluée entre 50 et 75 peut être rentable, mais ne fera pas un coup de maître sans un lourd investissement.<br/>
-  Alors réfléchissez.</p>
-<div class="separator"></div>
-  </bodys>
-  <script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="idea_estimator.js"></script>
+    <nav class="navbar navbar-inverse">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <a class="navbar-brand" href="#">Pcartau.fr</a>
+       </div>
+       <ul class="nav navbar-nav">
+         <li class="active"><a href="index.html">Home</a></li>
+         <li class="dropdown">
+           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Développement personnel
+           <span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             <li><a href="test">Objectifs</a></li>
+             <li><a href="#">Actions prioritaires</a></li>
+             <li><a href="#">Actions secondaires</a></li>
+           </ul>
+         </li>
+         <li class="dropdown">
+           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MBA
+           <span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             <li><a href="#">Valeur ajoutée</a></li>
+             <li><a href="#">Marketing</a></li>
+             <li><a href="#">Vente</a></li>
+           </ul>
+         </li>
+         <li><a href="idea_estimator.html">Estimateur d'idée</a></li>
+       </ul>
+     </div>
+   </nav>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
