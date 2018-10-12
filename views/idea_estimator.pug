@@ -6,91 +6,92 @@ html(lang='fr')
     style
       include css/idea_estimator.css
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
-    title test
+    title Estimer une idée
   body
     a.sc0
     include utils/navbar.pug
-    h1.text-primary.titre
-      | Estimer mon idée      
-    p.lobby_description.text-info
-      | Les Dix critères d'évaluation d'un marché constituent une méthode pifométrique pour identifier
-      br
-      |       l'attractivité d'un marché potentiel. Évaluez chacun des dix facteurs ci-dessous sur
-      |     une échelle de 0 à 10 où 0 correspond à un marché extrêmement peu attractif et 10 à un marché extrêmement attractif. Dans le doute, soyez prudent dans vos estimations.
-    .selection_bar
-      #b1.selection_bar_1
-      #b2.selection_bar_2
-      #b3.selection_bar_3
-      #b4.selection_bar_4
-      #b5.selection_bar_5
-      #b6.selection_bar_6
-      #b7.selection_bar_7
-      #b8.selection_bar_8
-      #b9.selection_bar_9
-      #b10.selection_bar_10
-    p.chiffre
-    button#next.btn.btn-success(type='button') C'est parti
-    .separator
-    a.sc1
-    p.question.text-primary
+    .container
+      h1.titre
+        | Estimer mon idée      
+      p.lobby_description.text-info
+        | Les Dix critères d'évaluation d'un marché constituent une méthode pifométrique pour identifier
+        br
+        |       l'attractivité d'un marché potentiel. Évaluez chacun des dix facteurs ci-dessous sur
+        |     une échelle de 0 à 10 où 0 correspond à un marché extrêmement peu attractif et 10 à un marché extrêmement attractif. Dans le doute, soyez prudent dans vos estimations.
+      .selection_bar
+        #b1.selection_bar_1
+        #b2.selection_bar_2
+        #b3.selection_bar_3
+        #b4.selection_bar_4
+        #b5.selection_bar_5
+        #b6.selection_bar_6
+        #b7.selection_bar_7
+        #b8.selection_bar_8
+        #b9.selection_bar_9
+        #b10.selection_bar_10
+      p.chiffre
+      button#next.btn.btn-success(type='button') C'est parti
+      .separator
       a.sc1
-      | L'urgence
-    p.question_description.text-secondary
-      | Dans quelle mesure votre offre répond-elle à un besoin ou à un désir immédiat des individus ?
-    .separator
-    a.sc2
-    p.question.text-primary
+      p.question.text-primary
+        a.sc1
+        | L'urgence
+      p.question_description.text-secondary
+        | Dans quelle mesure votre offre répond-elle à un besoin ou à un désir immédiat des individus ?
+      .separator
       a.sc2
-      | La taille du marché
-    p.question_description.text-secondary Combien de personnes sont prêtes à acheter ce genre de choses ?
-    .separator
-    a.sc3
-    p.question.text-primary Le prix possible
-    p.question_description.text-secondary
-      | Quel est le prix le plus élevé qu'un acheteur type serait prêt à payer pour trouver une solution à son problème ?
-    .separator
-    a.sc4
-    p.question.text-primary Le coût d'acquisition d'un client
-    p.question_description.text-secondary Est-il facile de gagner un nouveau client ?
-    .separator
-    a.sc5
-    p.question.text-primary Le coût pour délivrer la valeur
-    p.question_description.text-secondary
-      | À combien estimez-vous le coût de la création de la valeur pour la délivrer en termes de temps, d'argent et d'énergie ?
-    .separator
-    a.sc6
-    p.question.text-primary L'originalité de l'offre
-    p.question_description.text-secondary
-      | Quel est le degré de singularité de votre offre comparée aux offres existantes de la concurrence et dans quelle mesure est-il facile pour vos concurrents de vous copier ?
-    .separator
-    a.sc7
-    p.question.text-primary La rapidité de mise sur le marché
-    p.question_description.text-secondary Avec quelle rapidité pouvez-vous créer quelque chose à vendre ?
-    .separator
-    a.sc8
-    p.question.text-primary L'investissement initial
-    p.question_description.text-secondary Combien allez-vous devoir investir avant d'être prêt à vendre votre produit
-    .separator
-    a.sc9
-    p.question.text-primary Le potentiel de ventes additionnelles
-    p.question_description.text-secondary
-      | Pourriez-vous réaliser des ventes connexes à l'offre que vous proposez à vos clients ?
-    .separator
-    a.sc10
-    p.question.text-primary Le potentiel de persistance
-    p.question_description.text-secondary
-      | Une fois que vous avez créé votre offre initiale, quelle somme de travail supplémentaire allez-vous devoir lui consacrer pour continuer à la vendre ?
-    .separator
-    a.sc11
-    p.question.text-primary Resultat
-    p#result.resultat
-    p.resultat_description.text-danger
-      | Si votre résultat est égal ou inférieur à 50, choisissez une meilleure idée dans laquelle investir votre temps, votre argent et votre énergie.
-      br
-      |   Si votre résultat est égal ou supérieur à 75, votre idée est très prometteuse, alors foncez ! Toute idée évaluée entre 50 et 75 peut être rentable, mais ne fera pas un coup de maître sans un lourd investissement.
-      br
-      |   Alors réfléchissez.
-    .separator
+      p.question.text-primary
+        a.sc2
+        | La taille du marché
+      p.question_description.text-secondary Combien de personnes sont prêtes à acheter ce genre de choses ?
+      .separator
+      a.sc3
+      p.question.text-primary Le prix possible
+      p.question_description.text-secondary
+        | Quel est le prix le plus élevé qu'un acheteur type serait prêt à payer pour trouver une solution à son problème ?
+      .separator
+      a.sc4
+      p.question.text-primary Le coût d'acquisition d'un client
+      p.question_description.text-secondary Est-il facile de gagner un nouveau client ?
+      .separator
+      a.sc5
+      p.question.text-primary Le coût pour délivrer la valeur
+      p.question_description.text-secondary
+        | À combien estimez-vous le coût de la création de la valeur pour la délivrer en termes de temps, d'argent et d'énergie ?
+      .separator
+      a.sc6
+      p.question.text-primary L'originalité de l'offre
+      p.question_description.text-secondary
+        | Quel est le degré de singularité de votre offre comparée aux offres existantes de la concurrence et dans quelle mesure est-il facile pour vos concurrents de vous copier ?
+      .separator
+      a.sc7
+      p.question.text-primary La rapidité de mise sur le marché
+      p.question_description.text-secondary Avec quelle rapidité pouvez-vous créer quelque chose à vendre ?
+      .separator
+      a.sc8
+      p.question.text-primary L'investissement initial
+      p.question_description.text-secondary Combien allez-vous devoir investir avant d'être prêt à vendre votre produit
+      .separator
+      a.sc9
+      p.question.text-primary Le potentiel de ventes additionnelles
+      p.question_description.text-secondary
+        | Pourriez-vous réaliser des ventes connexes à l'offre que vous proposez à vos clients ?
+      .separator
+      a.sc10
+      p.question.text-primary Le potentiel de persistance
+      p.question_description.text-secondary
+        | Une fois que vous avez créé votre offre initiale, quelle somme de travail supplémentaire allez-vous devoir lui consacrer pour continuer à la vendre ?
+      .separator
+      a.sc11
+      p.question.text-primary Resultat
+      p#result.resultat
+      p.resultat_description.text-danger
+        | Si votre résultat est égal ou inférieur à 50, choisissez une meilleure idée dans laquelle investir votre temps, votre argent et votre énergie.
+        br
+        |   Si votre résultat est égal ou supérieur à 75, votre idée est très prometteuse, alors foncez ! Toute idée évaluée entre 50 et 75 peut être rentable, mais ne fera pas un coup de maître sans un lourd investissement.
+        br
+        |   Alors réfléchissez.
+      .separator
     script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
     script
       include js/idea_estimator.js
